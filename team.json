@@ -1,0 +1,10 @@
+---
+---
+{
+  {% for config in site.data.config %}"{{config[0]}}": "{{config[1]}}",
+  {% endfor %}
+  "members": [
+    {% for person in site.member %}{{ person.data | jsonify }}{% unless forloop.last %}, 
+    {% endunless %}{% endfor %}
+  ]
+}

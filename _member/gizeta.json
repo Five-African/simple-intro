@@ -1,0 +1,12 @@
+---
+layout: json
+data:
+  name: "空鱼"
+  id: "Gizeta"
+  leader: true
+  skills: ["C", "C#", "Ruby", "Node.js", "PHP"]
+  contacts:
+    github: "https://github.com/Gizeta"
+    weibo: "http://weibo.com/gizeta"
+    website: "http://gizeta.me/"
+---

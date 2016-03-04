@@ -1,0 +1,10 @@
+collections:
+  member:
+    output: true
+include:
+  - bundle.js
+exclude:
+  - src
+  - node_modules
+  - "*.js"
+  - package.json
