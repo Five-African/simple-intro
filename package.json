@@ -1,0 +1,30 @@
+{
+  "name": "simple-intro",
+  "version": "1.0.0",
+  "description": "为什么会变成这样呢……第一次有了团队页面，还有人设计了另外的页面。两件快乐事情重合在一起。而这两份快乐，又给我带来更多的快乐。得到的，本该是像梦境一般幸福的时间……但是，为什么，会变成这样呢……",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Five-African/simple-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Five-African/simple-intro/issues"
+  },
+  "homepage": "https://github.com/Five-African/simple-intro#readme",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-json-tree": "^0.5.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015-loose": "^7.0.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "gulp": "^3.9.1",
+    "webpack": "^1.12.14"
+  }
+}

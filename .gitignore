@@ -1,0 +1,11 @@
+.jekyll-metadata
+_site/
+_data/
+_layouts/
+_member/
+_config.yml
+index.html
+team.json
+
+node_modules/
+bundle.js
