@@ -1,0 +1,11 @@
+---
+layout: json
+data:
+  name: "信誉"
+  id: "Clect"
+  leader: false
+  skills: ["C", "C#", "Html/Css/Js", "Node"]
+  contacts:
+    github: "https://github.com/Clect"
+    website: "http://avalon.gizeta.me"
+---
