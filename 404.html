@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+  <meta charset="UTF-8">
+  <title>tty1</title>
+  <link rel="stylesheet" media="all" href="//cdn.rawgit.com/SDA/terminal/master/dist/terminal-1.0.0.min.css"/>
+</head>
+<body>
+  <div id="terminal"></div>
+  <script src="//cdn.rawgit.com/SDA/terminal/master/dist/terminal-1.0.0.min.js"></script>
+  <script>
+    var time = new Date();
+    var terminal = new Terminal('terminal', {welcome: [
+        "Configuration file: /home/Five-African/simple-intro/_config.yml",
+        "            Source: /home/Five-African/simple-intro",
+        "       Destination: /home/Five-African/simple-intro/_site",
+        " Incremental build: disabled. Enable with --incremental",
+        "      Generating... ",
+        "                    done in 0.103 seconds.",
+        " Auto-regeneration: enabled for '/home/Five-African/simple-intro'",
+        "Configuration file: /home/Five-African/simple-intro/_config.yml",
+        "    Server address: http://five-african.github.io/simple-intro/",
+        "  Server running... press ctrl-c to stop.",
+        "[" + time.toLocaleDateString() + " " + time.toLocaleTimeString() + "] ERROR `" + location.pathname + "' not found."
+      ].join('<br/>').replace(/ /g, '&nbsp;'),
+      prompt: "nobody:/home/Five-African/simple-intro",
+      separator: "#"
+    }, {
+      execute: function(cmd, args) {
+        switch (cmd) {
+          case "clear":
+            terminal.clear();
+            return '';
+          case "help":
+            return "Commands: cat, clear, help, ls";
+          default:
+            return false;
+        }
+      }
+    }, {
+      execute: function(cmd, args) {
+        switch (cmd) {
+          case "ls":
+            return "haruka.txt";
+          case "cat":
+            if (args && args[0]) {
+              if (args.length > 1) return 'Too many arguments';
+              else {
+                switch (args[0]) {
+                  case "haruka.txt":
+                    return '<font style=\'font-family:Mona,"MS PGothic AA","ＭＳ Ｐゴシック","MS PGothic","MS Pｺﾞｼｯｸ","MS Pゴシック","ＭＳＰゴシック","MSPゴシック","IPA モナー Pゴシック","IPA mona PGothic","IPA MONAPGOTHIC",IPAMonaPGothic,Textar,Kuma_Lite,sans-serif\'>' + [
+                      "　　　　　　　　　　　　　　　　　　　　　　　　　,. - \"~￣￣~｀`'丶、",
+                      "　　　　　　　　　　　　　　　　　　　　　　 ／　　　,　　　｀´　、　　｀丶",
+                      "　　　　　　　　　　　　　　　　　　　　　／　　 ／　　　 ´ 、　 ヽ.　　　 ＼",
+                      "　　　　　　　　　　　　　　　　　　 　 /　　　/　　　　　　　;　　　 ヽ　　　 ',",
+                      "　　　　　　　　　　　　　　　　　　　/　　　/　　　,/ ,　　　i　　　　　ヽ　　　',",
+                      "　　　　　　　　　　　　　　　　　　 ,'　　　/　　　/　,l　 　 ,' ﾄ　 　 　　丶　　'",
+                      "　　　　　　　　　　　　　　　　　　,'　 ,. /l^i　　　/ /l 　 ´ 　lヽ　　　　　',　　ｌ",
+                      "　　　　　　　　　　　　　　　　 ,、,'　 ', -' '、 ﾉ-‐/‐ﾄ　　　 ,' _ヽ ,、　　　',　　l",
+                      "　　　　　　　　　　　　　　　　 !,'廴,=i・_,’ﾉ'　/,/　 | 　　, / 　｀\";ト　　　 ',　 ｌ",
+                      "　　　　　　　　　　　　　　　　　ｿ\"´/｀\"´　/ノ　_ .'l　 ノ/ 　　　', |',　　　　　|",
+                      "　　　　　,--、　　　　 　　　　ノ　 /　　　/ ,x===:、! '\"´　　‐　 l'　',　　　.　l",
+                      "　　　　/　　 l　　　　 　　　//'　,/, i　　/', ´　　　 　　　　 '\"\"''ヾ、 ', i　　　l",
+                      ".　　　 ｌ　 i　 l　　　　　 　 ｌi　i　i /ｌ　/ ヽ:,　　　　　　'　　　　　　 /,.l|l　 ＿l",
+                      "　　　__!.,i\"'_'ヽ　　　　　　 ヽ ｌ　l　 l　i　　 '.、　　 l\"￣ﾞヽ　　　　/,ノ, '\"- 、｀ヽ",
+                      "　／　　 ゞｰ''iヽ、　　　　　 　i　li '、 l /　 ノlヽ.、 ヽ.__ノ　　　,ノ　,'　l:;:;:;:;:;:l＿,.!‐-、",
+                      "´　　　　｀｀´　　ヽ　　　　　　 ヾ、ヽ=ヾｔ'i　 l　 l｀丶 - ‐ ''\"l、 l　 !ﾉ ＞　　　　　　　｀丶、",
+                      "　　　　　　 　　,-.｀l　　　　　　　ヾ,'_ノノ ',,.. ヽ/｀ ,.-ｰ‐‐'\"\" ヽ,、_,/:　　　　　　　　　　　 、´\"ヽ,",
+                      ".　　 　　　●　 l 、ヽ　　　　　　　/ ,/　／ヽ、!_´-ー--─ \"'　,.--!　　　ο　　　　　 　 　', 　 　l",
+                      "　　　● ’ノ 　｀.、　l 　 　 　 　 / /　/　 / ”/／/‐‐,=,、, _,、l　　 ',　　,.--。ο　　　 　 　l 　　l",
+                      "ヽ　,-‐、　　,.,_'\" ｀-iヽ、　　　 /　'　/　／\"/'　 /--,/,、ｌ　 　,..!　　人 l　 ﾍ　ヽ　　　　　　l___ノ"
+                    ].join("<br/>") + "</font>";
+                  default:
+                    return "cat: " + args[0] + ": No such file or directory";
+                }
+              }
+            }
+            return '';
+          default:
+            return false;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
