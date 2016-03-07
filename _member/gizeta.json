@@ -9,7 +9,7 @@ data:
   战技: ["C", "C#", "Ruby", "Node.js", "PHP"]
   魔法: ["WPF", "MongoDB", "Sinatra", "React", "Bootstrap", "Babel"]
   S战技: "弃坑"
-  未学习技能
+  未学习技能:
     - "Elixir"
     - "Rust"
     - "PostgreSQL"
