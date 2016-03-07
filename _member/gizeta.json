@@ -1,26 +1,30 @@
 ---
 layout: json
 data:
-  名字: "空鱼"
-  ID: "Gizeta"
+  名字: 空鱼
+  ID: Gizeta
   队长: true
   等级: 5
   所属战队: null
   战技: ["C", "C#", "Ruby", "Node.js", "PHP"]
   魔法: ["WPF", "MongoDB", "Sinatra", "React", "Bootstrap", "Babel"]
-  S战技: "弃坑"
+  S战技: ["弃坑"]
   未学习技能:
-    - "Elixir"
-    - "Rust"
-    - "PostgreSQL"
-    - "Crystal"
-    - "React-Native"
-    - "Shell"
-    - "Hadoop/Spark"
-    - "WebGL"
-    - "Electron"
+    - Elixir
+    - Rust
+    - PostgreSQL
+    - Crystal
+    - React-Native
+    - Shell
+    - Hadoop/Spark
+    - WebGL
+    - Electron
+    - F#
   联系方式:
-    GitHub: "https://github.com/Gizeta"
-    微博: "http://weibo.com/gizeta"
-    辣鸡自建网站: "http://gizeta.me/"
+    GitHub: https://github.com/Gizeta
+    Twitter: https://twitter.com/Gizeta_sf
+    Telegram: SkyFish_gz
+    微博: http://weibo.com/gizeta
+    email: 0w0@gizeta.tk
+    辣鸡自建网站: http://gizeta.me/
 ---
