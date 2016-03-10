@@ -1,0 +1,12 @@
+---
+layout: json
+data:
+  名字: 阿塔尼斯
+  ID: Ataris
+  队长: false
+  技能: ["卖萌", "划水", "吐槽", "装傻", "卖肾写代码"]
+  联系方式:
+    GitHub: https://github.com/AtrisMio
+    WebSite: http://ataris.top
+    Email: ataris@sina.com
+---
