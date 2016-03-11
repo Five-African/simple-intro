@@ -6,6 +6,6 @@ data:
   队长: false
   技能: ["划水", "发浪", "写代码"]
   联系方式:
-  GitHub: https://github.com/TedHan
-  email: t.han0922@gmail.com
+    GitHub: https://github.com/TedHan
+    Email: t.han0922@gmail.com
 ---
